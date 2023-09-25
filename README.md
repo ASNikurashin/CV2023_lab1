@@ -28,21 +28,19 @@
 
 ![image_2023-09-17_20-47-39](https://learnopencv.com/wp-content/uploads/2022/12/feature-image-iou-1-1024x292.jpg)
 
-**Скорость выполнения**
-* Измерить скорость выполнения в с/Мп (секунда на мегапиксель)
-
-
 ## Baseline
 * IoU вычисляется для каждого изображения, затем определяется среднее значение
- _Нижний порог метрики_ равен `53.56%` и достигается, если в качестве решения передавать все координаты изображения
-* При помощи решения составителей задания было получено значение метрики, равное `88.81%`
+* Основные шаги:
+  * Поиск градиентов
+  * 
+* При помощи медотов указанных в таблице лучшее значение метрики IoU достигло: 0.91;
 
 
 | Методы   | Ссылка на решение | Результат | Скорость выполнения |
 |----------|-------------------|-----------|---------------------|
-| Sobel, morphological, threshold, findContours                | [ноутбук](https://colab.research.google.com/drive/1jLoLhwLoiuEl7kbHgRL-dhrnMXl-1vUr?usp=sharing)           | 0,9068 |👉 &#124; |
-| Sobel, morphological, threshold, GaussianBlur, binary_closing| [ноутбук](https://colab.research.google.com/drive/1JobD_DqQEZG-Pp-Ig2LDvTboh7xykv3T#scrollTo=HBMzR7U74fTz) | 0,8380 |👉 &#124; |
-| Laplacian, threshold, Morphological, GaussianBlur            | [ноутбук](https://colab.research.google.com/drive/1-fgFF5tkys7SLSuWoNv1q6PvDPCR2l3z?usp=sharing)           | 0,8188 |👉 &#124; |
+| Sobel, morphological, threshold, findContours                | [ноутбук](https://colab.research.google.com/drive/1jLoLhwLoiuEl7kbHgRL-dhrnMXl-1vUr?usp=sharing)           | 0,9068 |1,6 С/Мп |
+| Sobel, morphological, threshold, GaussianBlur, binary_closing| [ноутбук](https://colab.research.google.com/drive/1JobD_DqQEZG-Pp-Ig2LDvTboh7xykv3T#scrollTo=HBMzR7U74fTz) | 0,8380 |1,4 С/Мп |
+| Laplacian, threshold, Morphological, GaussianBlur            | [ноутбук](https://colab.research.google.com/drive/1-fgFF5tkys7SLSuWoNv1q6PvDPCR2l3z?usp=sharing)           | 0,8188 |1,3 C/Мп |
 
 
 
